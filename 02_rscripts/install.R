@@ -12,12 +12,10 @@ packs <- c(
   "modelsummary",
   "openssl",
   "ragg",
-  "softbib",
   "stringr",
   "this.path",
   "tinytable",
-  "xfun",
-  "grateful"
+  "xfun"
 )
 
 options(repos = c(CRAN = "https://packagemanager.posit.co/cran/2026-07-17"))
