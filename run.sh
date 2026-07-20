@@ -66,9 +66,8 @@ echo "Script working directory: $SCRIPT_DIR"
 echo ""
 
 # Install R packages
-# Install R packages
 echo "Installing R packages..."
-Rscript "$SCRIPT_DIR/install.R"
+"$RSCRIPT" "$SCRIPT_DIR/install.R"
 if [ $? -eq 0 ]; then
     echo "✓ Packages installed"
 else
