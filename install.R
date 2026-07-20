@@ -1,23 +1,17 @@
 ### install packages
-packs <- c(
-  "dataverse",
-  "causaldata",
-  "data.table",
-  "estimatr",
-  "evaluate",
-  "fixest",
-  "ggplot2",
-  "haven",
-  "magrittr",
-  "modelsummary",
-  "openssl",
-  "ragg",
-  "stringr",
-  "this.path",
-  "tinytable",
-  "xfun"
-)
-
-options(repos = c(CRAN = "https://packagemanager.posit.co/cran/2026-07-17"))
-
-install.packages(packs)
+install.packages("dataverse")
+install.packages("causaldata")
+install.packages("data.table")
+install.packages("estimatr")
+install.packages("evaluate")
+install.packages("fixest")
+install.packages("ggplot2")
+install.packages("haven")
+install.packages("magrittr")
+install.packages("modelsummary")
+install.packages("openssl")
+install.packages("ragg")
+install.packages("stringr")
+install.packages("this.path")
+install.packages("tinytable")
+install.packages("xfun")
