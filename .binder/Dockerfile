@@ -27,6 +27,8 @@ RUN apt-get update -y && \
       zlib1g-dev && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+RUN R -e "install.packages(c('cli', 'curl', 'glue', 'lifecycle', 'pak', 'pillar', 'remotes', 'rlang', 'rstudioapi', 'vctrs'), repos='https://cloud.r-project.org/')"
+
 # Copy repository into user's home and set ownership
 COPY --chown=${NB_USER}:${NB_GID} . ${HOME}/project
 WORKDIR ${HOME}/project
