@@ -12,21 +12,12 @@ Below is an overview of the repository layout:
 │   ├── 01_data_cleaning.R  # Data input and preparation script (R)
 │   ├── 02_descriptives.R   # Descriptive results (R)
 │   ├── 03_modeling.R       # Diff-in-diff modeling script (R)
-│   ├── utils/              # Reusable functions or modules
 │   └── README.md           # Analysis workflow and script purposes
 ├── 03_output/              # Quarto output drafts, figures, documents
 │   └── README.md           # tbd.
-├── 04_presentation/        # Materials for talks, posters, slides
-│   └── README.md           # Summarize presentations (title, date, format)
-├── 05_misc/                # Supplementary files (proposals, notes, etc.)
-│   └── README.md           # Describe contents
-├── renv/                   # For replicability a renv.lock is used
-│   └── README.md           # Describe contents
-renv.lock                   # r packages used
 ├── diff_in_diffs.Rproj     # The R project (open it using R Studio)
 └── README.md               # Project overview and setup instructions (this file)
 └── session_info.txt        # Information on the R session
-└── software.bib            # Cites R packages used
 └── github_infos.qmd        # Explains the very basics of Git and Github usage
 ```
 
