@@ -1,10 +1,6 @@
 # Example of a Difference-in-differences project
-  <!-- badges: start -->
-  [![Launch Rstudio Binder](http://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brueckmann/did-binder-test/master?urlpath=rstudio)
-  <!-- badges: end -->
 
 ## Directory Structure
-
 Below is an overview of the repository layout:
 
 ```
