@@ -3,9 +3,11 @@
 
 packs <- c('dataverse', 'causaldata', 'data.table', 'estimatr', 'evaluate', 'fixest', 'ggplot2',
            'haven', 
-           'lfe',
             'magrittr', 'modelsummary', 'openssl', 'ragg',
-           'softbib', 'stringr', 'this.path', 'tinytable', 'xfun' )
+           'softbib', 'stringr', 'this.path', 'tinytable', 'xfun',
+          # 'lfe',
+           'holepunch'
+           )
 
 options(repos = c(CRAN = "https://packagemanager.posit.co/cran/2026-07-17"))
 
