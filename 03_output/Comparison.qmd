@@ -79,7 +79,7 @@ source_lines <- function(file, lines){
 #| warning: false
 #| code-fold: true
 
-source_lines(file.path(project_root, "02_rscripts/01_data_cleaning.R"), (18:21))
+source_lines(file.path(project_root, "02_rscripts/01_data_cleaning.R"), (20:22))
 ```
 
 ```{r}
@@ -125,7 +125,7 @@ Replication_data |>
 
 # Source local code
 
-source_lines(file.path(project_root, "02_rscripts/01_data_cleaning.R"), (23:176))
+source_lines(file.path(project_root, "02_rscripts/01_data_cleaning.R"), (28:174))
 
 ```
 
@@ -451,7 +451,7 @@ rm(age_tbl, gender_tbl, educ_tbl , income_tbl, n_tbl, for_tab_1)
 
 # Source local code
 
-source_lines(file.path(project_root, "02_rscripts/02_descriptives.R"), (31:183))
+source_lines(file.path(project_root, "02_rscripts/02_descriptives.R"), (31:188))
 
 ```
 
