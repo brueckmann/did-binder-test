@@ -6,6 +6,8 @@
 
 In Binder (on [mybinder]((https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD))), use the terminal to run `bash run.sh`. This will download the data into `/01_data` and generate outputs (figures, tables) in `/03_output/figures` and `/03_output/tables`. 
 
+Alternatively, if you want to use `RStudio` on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD?urlpath=rstudio), you can run `run.R`.
+
 ## Directory Structure
 Below is an overview of the repository layout:
 
@@ -35,9 +37,9 @@ Below is an overview of the repository layout:
 │   └── README.md               	# Output documentation
 ├── diff_in_diffs.Rproj         	  	# The RStudio R project
 ├── github_info.qmd               		# Explains the very basics of Git and Github usage
-├── run-it-all-in-mybinders-Rstudio.R  	# R Script to run all analyses
-└── session_info.txt        			# Information on the R session
-├── run.sh                        		# Shell script to run all analyses
+├── run.R                             # R script to run everything
+├── run.sh                        		# Shell script to run everything
+└── session_info.txt            			# Information on the R session
 └── README.md                     		# Project overview and setup instructions (this file)
 ```
 
