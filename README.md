@@ -1,16 +1,40 @@
 # Difference-in-differences project
 
-
 ## Usage
 
 Everything in this repo runs using `bash run.sh`. 
-- This will perform all scripts in `/02_rscripts`, i.e., downloading the data into `/01_data` and generating outputs (figures, tables) in `/03_output/figures` and `/03_output/tables`. Moreover, it renders the quarto (`.qmd`) documents in `/03_output` to `html`. 
+- This will perform all scripts in `/02_rscripts`, i.e.,
+  -   downloading data into `/01_data`,
+  -   generating figures and tables saved into `/03_output/figures` and `/03_output/tables`,
+  -   rendering the quarto (`.qmd`) documents in `/03_output` to `html`.
 
-## This repository is binderized
+
+## This repository is binderized on [mybinder.org](https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD)
 
 In Binder [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD) open a terminal and run `bash run.sh` . 
 
+
+<details>
+
+<summary> Open step-by-step instructions with screenshots</summary>
+
+1) Open [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD) and navigate to the Terminal (at the bottom left) <img width="1365" height="823" alt="Binder_JN_1" src="https://github.com/user-attachments/assets/08611b75-afd0-41b5-9c2b-050b860787c5" />
+2) open a terminal <img width="1365" height="823" alt="Binder_Terminal_1" src="https://github.com/user-attachments/assets/84f4a0f0-eb7f-418f-bd63-047f73d3576d" />
+3) and, then, run the script <img width="1365" height="823" alt="Binder_Terminal_2" src="https://github.com/user-attachments/assets/6ae0271a-cc0f-4e65-bf21-7a7a3e8f9f9b" />
+
+</details>
+
 Alternatively, if you want to use `RStudio` on [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD?urlpath=rstudio), you may run `run.R`.
+
+<details>
+
+<summary> Open step-by-step instructions with screenshots</summary>
+
+1) Launch the RStudio [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/brueckmann/did-binder-test/HEAD?urlpath=rstudio) <img width="1365" height="823" alt="Binder_Rstudio_1" src="https://github.com/user-attachments/assets/b19d6f08-51c4-44d5-b6ce-11efa3011081" />
+2) and, then, run  `run.R` <img width="1365" height="823" alt="Binder_Rstudio_2" src="https://github.com/user-attachments/assets/75aec17e-b424-4b52-8c7f-26d784e26669" />
+
+</details>
+
 
 ## Directory Structure
 Below is an overview of the repository layout:
@@ -46,6 +70,8 @@ Below is an overview of the repository layout:
 └── session_info.txt            # Information on the R session
 └── README.md                   # Project overview and setup instructions (this file)
 ```
+
+
 
 # Acknowledgements: 
 
