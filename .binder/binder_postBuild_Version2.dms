@@ -1,0 +1,12 @@
+name: binder-r
+channels:
+  - conda-forge
+dependencies:
+  - r-base=4.3  # pick a supported R version; adjust if you need a specific one
+  - r-essentials
+  - r-devtools
+  - r-rprojroot
+  - python=3.11  # binder usually includes python/jupyter
+  - pip
+  - pip:
+    # add python packages here if needed

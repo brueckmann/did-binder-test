@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+
+echo "Running postBuild: installing R packages..."
+# Use the repo R install script; adjust path if you prefer the root install.R
+Rscript 02_rscripts/install.R
+
+echo "postBuild finished."
