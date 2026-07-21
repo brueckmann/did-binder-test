@@ -139,3 +139,54 @@ echo ""
 echo "=========================================="
 echo "Analysis Pipeline Completed Successfully!"
 echo "=========================================="
+
+# Check that the Quarto CLI is reachable
+if ! command -v quarto &> /dev/null; then
+    if [ -x "${HOME}/opt/quarto/bin/quarto" ]; then
+        # Typical Binder location installed via .binder/postBuild
+        export PATH="${HOME}/opt/quarto/bin:${PATH}"
+    elif [ -n "$QUARTO_PATH" ] && [ -x "$QUARTO_PATH" ]; then
+        export PATH="$(dirname "$QUARTO_PATH"):${PATH}"
+    else
+        echo "=========================================="
+        echo "Quarto command-line tools not found"
+        echo "=========================================="
+        echo ""
+        echo "Install Quarto from https://quarto.org/docs/get-started/"
+        echo "and ensure 'quarto' is on your PATH, or set the QUARTO_PATH"
+        echo "environment variable to the full path of the quarto binary."
+        exit 1
+    fi
+fi
+
+echo "✓ Using Quarto from: $(command -v quarto)"
+echo ""
+
+echo "=========================================="
+echo "Start Rendering Quarto Files to HTML"
+echo "=========================================="
+echo "Executing: quarto render 03_output/Comparison.qmd"
+
+quarto render "03_output/Comparison.qmd" --quiet
+
+if [ $? -eq 0 ]; then
+    echo "✓ Quarto rendered Comparision successfully"
+else
+    echo "✗ Quarto rendering Comparision failed"
+    exit 1
+fi
+echo ""
+
+quarto render "03_output/BasicDiffinDiffs.qmd" --quiet
+
+if [ $? -eq 0 ]; then
+    echo "✓ Quarto rendered BasicDiffinDiffs presentation successfully"
+else
+    echo "✗ Quarto rendering BasicDiffinDiffs failed"
+    exit 1
+fi
+echo ""
+
+echo "=========================================="
+echo "Rendered Quartos to HTML Successfully!"
+echo "=========================================="
